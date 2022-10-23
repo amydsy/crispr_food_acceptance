@@ -13,7 +13,6 @@ library(stringr)
 # set working directory 
 # repo root
 repo_root <- getwd()
-output_folder <- "output/"
 
 # get cleaned data 
 df <- read.csv(list.files("data_clean/apple/", full.names = T))
@@ -25,6 +24,9 @@ df = subset(df, select = -c(1))
 # rename columns
 colnames(df)[1] <- 'ID'
 colnames(df)[2] <- 'Choice'
+
+# set working dir to output folder
+setwd(file.path(getwd(), "output/"))
 
 #----------------------------select treatment-----------------------------------
 df<-df[!(df$ID==16 ),]  

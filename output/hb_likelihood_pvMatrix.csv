@@ -1,0 +1,8 @@
+"","none","organic","nongmo","CRISPR","conventional","online","price"
+"none",1,0,0,0,0,0,0
+"organic",0,1,0,0,0,0,0
+"nongmo",0,0,1,0,0,0,0
+"CRISPR",0,0,0,1,0,0,0
+"conventional",0,0,0,0,1,0,0
+"online",0,0,0,0,0,1,0
+"price",0,0,0,0,0,0,1
