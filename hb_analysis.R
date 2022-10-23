@@ -174,8 +174,6 @@ likelihood<- function(fc ,b)
 
 set.seed(2017)
 
-doHB(likelihood, df, control)
-
 
 #---------------Sample-level main effect coefficient means----------------------
 
@@ -197,12 +195,6 @@ sapply(dfA_select, function(dfA_select) c(
     "LowerQuartile" = quantile(dfA_select,0)
   )
 )
-
-
-
-# B Average individual level draws 
-head(model[["B"]]) # not use in this project
-
 
 # end 
 
